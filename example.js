@@ -4,7 +4,7 @@ var config = {
   user: 'rsadmin',
   password: 'rsPassword'
 };
-var rssql = require('rs-connector')(config);
+var rssql = require('redshift-sql')(config);
 var query = 'select * from myTable limit 10';
 
 rssql(query, function cb(err, result) {
