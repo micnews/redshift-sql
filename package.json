@@ -1,5 +1,5 @@
 {
-  "name": "rs-connector",
+  "name": "redshift-sql",
   "version": "1.0.0",
   "description": "A module to get data in and out of AWS Redshift Cluster",
   "main": "index.js",
