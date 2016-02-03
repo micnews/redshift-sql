@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/micnews/rs-connector.git"
+    "url": "git+https://github.com/micnews/redshift-sql.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/micnews/rs-connector/issues"
+    "url": "https://github.com/micnews/redshift-sql/issues"
   },
-  "homepage": "https://github.com/micnews/rs-connector#readme",
+  "homepage": "https://github.com/micnews/redshift-sql#readme",
   "devDependencies": {
     "package-json-to-readme": "^1.5.0"
   },
