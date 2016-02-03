@@ -19,5 +19,8 @@
   "homepage": "https://github.com/micnews/rs-connector#readme",
   "devDependencies": {
     "package-json-to-readme": "^1.5.0"
+  },
+  "dependencies": {
+    "pg": "^4.4.4"
   }
 }

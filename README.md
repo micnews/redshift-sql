@@ -40,7 +40,7 @@ npm test
 
 ## Dependencies
 
-None
+- [pg](https://github.com/brianc/node-postgres): PostgreSQL client - pure javascript &amp; libpq with the same API
 
 ## Dev Dependencies
 
