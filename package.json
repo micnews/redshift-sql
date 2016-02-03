@@ -1,6 +1,6 @@
 {
   "name": "redshift-sql",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A very light [node-postgres](https://github.com/brianc/node-postgres) wrapper for running AWS Redshift queries.",
   "main": "index.js",
   "scripts": {
