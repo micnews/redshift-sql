@@ -3,7 +3,7 @@
 var assert = require('assert');
 var pg = require('pg');
 
-module.exports = function init(config) {
+module.exports = function init (config) {
   assert(config.user, 'user required');
   assert(config.password, 'password required');
   assert(config.host, 'host required');
@@ -13,7 +13,7 @@ module.exports = function init(config) {
   ':' + (config.port || 5439) + '/' + config.db;
   var client = new pg.Client(conString);
 
-  function query(sql, cb) {
+  function query (sql, cb) {
     client.connect(function (err) {
       if (err) {
         return cb(err);
@@ -24,5 +24,5 @@ module.exports = function init(config) {
       });
     });
   }
-  return query; 
+  return query;
 };
