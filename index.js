@@ -11,9 +11,9 @@ module.exports = function init (config) {
 
   var conString = 'postgres://' + config.user + ':' + config.password + '@' + config.host +
   ':' + (config.port || 5439) + '/' + config.db;
-  var client = new pg.Client(conString);
 
   function query (sql, cb) {
+    var client = new pg.Client(conString);
     client.connect(function (err) {
       if (err) {
         return cb(err);
