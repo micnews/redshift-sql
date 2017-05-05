@@ -12,13 +12,13 @@ module.exports = function init (config) {
   var conString = 'postgres://' + config.user + ':' + config.password + '@' + config.host +
   ':' + (config.port || 5439) + '/' + config.db;
 
-  function query (sql, cb) {
+  function query (sql, values, cb) {
     var client = new pg.Client(conString);
     client.connect(function (err) {
       if (err) {
         return cb(err);
       }
-      client.query(sql, function (err, result) {
+      client.query(sql, values, function (err, result) {
         client.end();
         cb(err, result);
       });
